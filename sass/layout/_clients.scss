@@ -1,0 +1,25 @@
+.clients__list {
+    flex-wrap: nowrap;
+    --card-item: 6;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    border: 1px solid var(--accent-text-color);
+    fill: var(--accent-text-color);
+}
+}

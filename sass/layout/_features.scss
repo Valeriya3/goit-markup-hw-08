@@ -1,0 +1,31 @@
+.features__list {
+    --card-item: 4;
+    flex-wrap: nowrap;
+}
+
+.features__title-list {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.features__description {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.features__icons {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 30px;
+}
