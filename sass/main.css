@@ -253,7 +253,6 @@ body {
 @media screen and (min-width: 480px) {
   .overlay {
     height: 400px;
-    background-size: auto;
   }
 }
 
@@ -272,11 +271,8 @@ body {
 }
 @media screen and (min-width: 480px) {
   .hero__title {
-    width: 360px;
-    margin-bottom: 30px;
+    width: 320px;
     font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
   }
 }
 
