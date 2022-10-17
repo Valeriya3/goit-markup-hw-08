@@ -1,23 +1,22 @@
-@import './utils/vars';
+@import "./utils/vars";
 
-@import './base/reset';
-@import './base/common';
-@import './base/container';
+@import "./base/reset";
+@import "./utils/mixin";
+@import "./base/common";
+@import "./base/container";
 
+@import "./components/card-set";
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/soc-list";
 
-@import './components/card-set';
-@import './components/logo';
-@import './components/btn';
-@import './components/soc-list';
-
-
-@import './layout/header';
-@import './layout/hero';
-@import './layout/features';
-@import './layout/work';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/modal';
-@import './layout/filters';
-@import './layout/projects';
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/modal";
+@import "./layout/filters";
+@import "./layout/projects";
