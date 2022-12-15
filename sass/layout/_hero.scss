@@ -4,30 +4,68 @@
   padding-top: 118px;
   padding-bottom: 118px;
   @include mq(desk) {
-    padding-top: 220px;
-    padding-bottom: 335px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgi-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    url(../images/bgi-hero-mob.jpeg);
+  @include mq(retina) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bgi-hero-mob-2x.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bgi-hero-tab.jpeg);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bgi-hero-tab-2x.jpeg);
+    }
+  }
+  @include mq(desk) {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bgi-hero.jpg);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bgi-hero-2x.jpeg);
+    }
+  }
 }
 
 .hero__title {
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: auto;
+  max-width: 360px;
 
   font-weight: 900;
   font-size: 26px;
@@ -36,12 +74,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  @include mq(tab) {
-    max-width: 360px;
-  }
+
   @include mq(desk) {
+    max-width: 696px;
     font-size: 44px;
-    line-height: 1.24;
-    max-width: 829px;
+    line-height: 1.36;
   }
 }

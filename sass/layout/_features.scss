@@ -1,6 +1,11 @@
 .features__list {
-  --card-item: 4;
-  flex-wrap: nowrap;
+  @include mq(tab) {
+    --card-item: 2;
+  }
+  @include mq(desk) {
+    --card-item: 4;
+    flex-wrap: nowrap;
+  }
 }
 
 .features__title-list {
@@ -22,10 +27,17 @@
 .features__icons {
   display: flex;
   justify-content: center;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
   align-items: center;
   margin-bottom: 30px;
+
+  @include mq(tab) {
+    max-width: 354px;
+  }
+  @include mq(desk) {
+    max-width: 270px;
+  }
 }

@@ -1,16 +1,23 @@
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--logo-black-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-black-color);
 }
 
 .logo--accent {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .logo--dark-bg {
-    color: var(--white-color);
+  color: var(--white-color);
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  @include mq(noDesk) {
+    text-align: center;
+  }
 }
